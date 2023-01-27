@@ -9,3 +9,32 @@ SELECT * FROM film;
 
 SELECT * FROM film
 WHERE description LIKE("%Drama%"); 
+
+SELECT * FROM customer
+WHERE last_name REGEXP("son$");
+
+
+SELECT COUNT(*) AS "Filmes com 7 dias de aluguel" FROM film
+WHERE rental_duration =7;
+
+
+SELECT * FROM film
+ORDER BY length DESC
+LIMIT 5;
+
+
+CREATE DATABASE primeiroDB;
+
+USE primeiroDB
+
+CREATE TABLE 
+
+
+CREATE TABLE users(
+user_id INT NOT NULL AUTO_INCREMENT,
+first_name VARCHAR(100),
+last_name VARCHAR(100),
+sallary INT,
+dob DATE,
+PRIMARY KEY(user_id)
+);
