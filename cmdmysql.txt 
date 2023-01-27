@@ -1,0 +1,11 @@
+
+Aula mysql , usando worbench
+
+Mysql em um container docker , com docker compose
+
+USE sakila;
+
+SELECT * FROM film;
+
+SELECT * FROM film
+WHERE description LIKE("%Drama%"); 
