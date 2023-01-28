@@ -38,3 +38,16 @@ sallary INT,
 dob DATE,
 PRIMARY KEY(user_id)
 );
+
+
+INSERT INTO users(first_name, last_name, sallary, dob)
+VALUES("Maria", "Ana", 3500, "1978-03-15");
+
+SELECT * FROM primeiroDB.users;
+
+UPDATE users
+SET sallary =10000
+WHERE user_id = 2;
+
+DELETE FROM users
+WHERE user_id = 3;
